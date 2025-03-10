@@ -25,7 +25,7 @@ public class chatBotController {
 
     @PostMapping(value="/getanswer",consumes = MediaType.APPLICATION_JSON_VALUE)
     static String getAnswerFromAi(@RequestBody GeminiDto geminiDto) throws JsonProcessingException {
-        logger.info("the question is : {}",geminiDto.getQuestion());
+        logger.info("The question is : {}",geminiDto.getQuestion());
 
         ObjectMapper objectMapper= new ObjectMapper();
         String requestBody = "{\n" +
