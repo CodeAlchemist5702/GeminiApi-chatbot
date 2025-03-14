@@ -40,4 +40,5 @@ public class chatBotController {
        return geminiResponse.getCandidateList().get(0).getContent().getParts().get(0).getText();
     }
 
+
 }
